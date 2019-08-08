@@ -139,7 +139,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="1.8" data-path="visualization.html"><a href="visualization.html#bubble-plot"><i class="fa fa-check"></i><b>1.8</b> Bubble plot</a></li>
 <li class="chapter" data-level="1.9" data-path="visualization.html"><a href="visualization.html#radar-plot"><i class="fa fa-check"></i><b>1.9</b> Radar plot</a></li>
 <li class="chapter" data-level="1.10" data-path="visualization.html"><a href="visualization.html#more"><i class="fa fa-check"></i><b>1.10</b> More …</a><ul>
-<li class="chapter" data-level="1.10.1" data-path="visualization.html"><a href="visualization.html#hapi-for-crossover-visualization-on-human-autosomes"><i class="fa fa-check"></i><b>1.10.1</b> Hapi for crossover visualization on human autosomes</a></li>
+<li class="chapter" data-level="1.10.1" data-path="visualization.html"><a href="visualization.html#crossover-hapi"><i class="fa fa-check"></i><b>1.10.1</b> Crossover (Hapi)</a></li>
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="2" data-path="gene-expression-omnibus-geo.html"><a href="gene-expression-omnibus-geo.html"><i class="fa fa-check"></i><b>2</b> Gene Expression Omnibus (GEO)</a></li>
@@ -1652,15 +1652,14 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <pre><code>## A Venn object on 5 sets named
 ## A,B,C,D,E 
 ## 00000 10000 01000 11000 00100 10100 01100 11100 00010 10010 01010 11010 
-##     0    30    70    51    20    17    42    15    54    32    79    54 
+##     0    28    70    43    20    13    34    31    47    47    84    52 
 ## 00110 10110 01110 11110 00001 10001 01001 11001 00101 10101 01101 11101 
-##    23    16    47    26    25    20    31    22    13    11    19    15 
+##    22    17    44    25    29    15    41    23    10    15    14    16 
 ## 00011 10011 01011 11011 00111 10111 01111 11111 
-##    39    16    46    32    15    20    28    23</code></pre>
+##    40    19    37    27    18    12    42    17</code></pre>
 <div class="sourceCode" id="cb44"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb44-1" data-line-number="1">genesInAll &lt;-<span class="st"> </span>vennData<span class="op">@</span>IntersectionSets[[<span class="st">&#39;11111&#39;</span>]]</a>
 <a class="sourceLine" id="cb44-2" data-line-number="2">genesInAll</a></code></pre></div>
-<pre><code>##  [1] 309 431 946  56 773 963 995  57 124  51  82 524  32 429 557   4 199
-## [18] 814 820  55  35   1 962</code></pre>
+<pre><code>##  [1] 159 427 278 306 638 845 695 262 121 827 849 317 209 205 346 955 914</code></pre>
 <div class="sourceCode" id="cb46"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb46-1" data-line-number="1"><span class="co">### Six Sets</span></a>
 <a class="sourceLine" id="cb46-2" data-line-number="2"><span class="kw">library</span>(venn)</a>
 <a class="sourceLine" id="cb46-3" data-line-number="3"></a>
@@ -2100,17 +2099,14 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </div>
 <div id="more" class="section level2">
 <h2><span class="header-section-number">1.10</span> More …</h2>
-<div id="hapi-for-crossover-visualization-on-human-autosomes" class="section level3">
-<h3><span class="header-section-number">1.10.1</span> Hapi for crossover visualization on human autosomes</h3>
+<div id="crossover-hapi" class="section level3">
+<h3><span class="header-section-number">1.10.1</span> Crossover (Hapi)</h3>
 <div class="sourceCode" id="cb61"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb61-1" data-line-number="1"><span class="co">#install.packages(&#39;Hapi&#39;)</span></a>
 <a class="sourceLine" id="cb61-2" data-line-number="2"><span class="kw">library</span>(Hapi)</a>
-<a class="sourceLine" id="cb61-3" data-line-number="3"></a>
-<a class="sourceLine" id="cb61-4" data-line-number="4"><span class="kw">data</span>(crossover)</a>
-<a class="sourceLine" id="cb61-5" data-line-number="5"><span class="co">#head(crossover)</span></a>
-<a class="sourceLine" id="cb61-6" data-line-number="6"><span class="kw">data</span>(hg19)</a>
-<a class="sourceLine" id="cb61-7" data-line-number="7"><span class="co">#head(hg19)</span></a>
-<a class="sourceLine" id="cb61-8" data-line-number="8"></a>
-<a class="sourceLine" id="cb61-9" data-line-number="9"><span class="kw">hapiCVMap</span>(<span class="dt">chr =</span> hg19, <span class="dt">cv =</span> crossover, <span class="dt">step =</span> <span class="dv">5</span>)</a></code></pre></div>
+<a class="sourceLine" id="cb61-3" data-line-number="3"><span class="kw">data</span>(crossover)</a>
+<a class="sourceLine" id="cb61-4" data-line-number="4"><span class="kw">data</span>(hg19)</a>
+<a class="sourceLine" id="cb61-5" data-line-number="5"></a>
+<a class="sourceLine" id="cb61-6" data-line-number="6"><span class="kw">hapiCVMap</span>(<span class="dt">chr =</span> hg19, <span class="dt">cv =</span> crossover, <span class="dt">step =</span> <span class="dv">5</span>)</a></code></pre></div>
 <p><img src="BioinfoHub_files/figure-html/unnamed-chunk-29-1.png" width="1440" /></p>
 
 </div>
