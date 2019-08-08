@@ -138,6 +138,9 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="1.7" data-path="visualization.html"><a href="visualization.html#heatmap"><i class="fa fa-check"></i><b>1.7</b> Heatmap</a></li>
 <li class="chapter" data-level="1.8" data-path="visualization.html"><a href="visualization.html#bubble-plot"><i class="fa fa-check"></i><b>1.8</b> Bubble plot</a></li>
 <li class="chapter" data-level="1.9" data-path="visualization.html"><a href="visualization.html#radar-plot"><i class="fa fa-check"></i><b>1.9</b> Radar plot</a></li>
+<li class="chapter" data-level="1.10" data-path="visualization.html"><a href="visualization.html#more"><i class="fa fa-check"></i><b>1.10</b> More …</a><ul>
+<li class="chapter" data-level="1.10.1" data-path="visualization.html"><a href="visualization.html#hapi-for-crossover-visualization-on-human-autosomes"><i class="fa fa-check"></i><b>1.10.1</b> Hapi for crossover visualization on human autosomes</a></li>
+</ul></li>
 </ul></li>
 <li class="chapter" data-level="2" data-path="gene-expression-omnibus-geo.html"><a href="gene-expression-omnibus-geo.html"><i class="fa fa-check"></i><b>2</b> Gene Expression Omnibus (GEO)</a></li>
 <li class="chapter" data-level="3" data-path="differential-expression-analysis.html"><a href="differential-expression-analysis.html"><i class="fa fa-check"></i><b>3</b> Differential Expression Analysis</a></li>
@@ -1649,15 +1652,14 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <pre><code>## A Venn object on 5 sets named
 ## A,B,C,D,E 
 ## 00000 10000 01000 11000 00100 10100 01100 11100 00010 10010 01010 11010 
-##     0    30    79    38    15    16    32    24    57    32    69    57 
+##     0    25    66    48    24    22    32    20    53    38    77    56 
 ## 00110 10110 01110 11110 00001 10001 01001 11001 00101 10101 01101 11101 
-##    36    16    42    36    27    20    36    34    17     8    19     9 
+##    30    15    48    33    25    14    41    29    22     7    22    15 
 ## 00011 10011 01011 11011 00111 10111 01111 11111 
-##    35    14    47    29    16    15    27    22</code></pre>
+##    36    16    54    34    20    15    12    13</code></pre>
 <div class="sourceCode" id="cb44"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb44-1" data-line-number="1">genesInAll &lt;-<span class="st"> </span>vennData<span class="op">@</span>IntersectionSets[[<span class="st">&#39;11111&#39;</span>]]</a>
 <a class="sourceLine" id="cb44-2" data-line-number="2">genesInAll</a></code></pre></div>
-<pre><code>##  [1] 660 832 158 601 470 474  10 752 575 665  79 620 771 603 768 903 129
-## [18] 552 991 976 972   1</code></pre>
+<pre><code>##  [1] 987 455 798 803  69 971 990 527 792 852 111 636  36</code></pre>
 <div class="sourceCode" id="cb46"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb46-1" data-line-number="1"><span class="co">### Six Sets</span></a>
 <a class="sourceLine" id="cb46-2" data-line-number="2"><span class="kw">library</span>(venn)</a>
 <a class="sourceLine" id="cb46-3" data-line-number="3"></a>
@@ -2094,7 +2096,36 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <a class="sourceLine" id="cb60-11" data-line-number="11"></a>
 <a class="sourceLine" id="cb60-12" data-line-number="12"><span class="kw">ggradar</span>(mtcars_radar)</a></code></pre></div>
 <p><img src="BioinfoHub_files/figure-html/unnamed-chunk-28-1.png" width="672" /></p>
+</div>
+<div id="more" class="section level2">
+<h2><span class="header-section-number">1.10</span> More …</h2>
+<div id="hapi-for-crossover-visualization-on-human-autosomes" class="section level3">
+<h3><span class="header-section-number">1.10.1</span> Hapi for crossover visualization on human autosomes</h3>
+<div class="sourceCode" id="cb61"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb61-1" data-line-number="1"><span class="co">#install.packages(&#39;Hapi&#39;)</span></a>
+<a class="sourceLine" id="cb61-2" data-line-number="2"><span class="kw">library</span>(Hapi)</a>
+<a class="sourceLine" id="cb61-3" data-line-number="3"></a>
+<a class="sourceLine" id="cb61-4" data-line-number="4"><span class="kw">data</span>(crossover)</a>
+<a class="sourceLine" id="cb61-5" data-line-number="5"><span class="kw">head</span>(crossover)</a></code></pre></div>
+<pre><code>##    gmt chr     start       end       pos    res
+## 1 gmt1   1  20135822  20363654  20249738 227832
+## 2 gmt1   1 175700236 175727238 175713737  27002
+## 3 gmt1   1 240645826 240781448 240713637 135622
+## 4 gmt1   2   1321663   1675155   1498409 353492
+## 5 gmt1   2 146993207 146999990 146996598   6783
+## 6 gmt1   3  11625202  11744899  11685050 119697</code></pre>
+<div class="sourceCode" id="cb63"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb63-1" data-line-number="1"><span class="kw">data</span>(hg19)</a>
+<a class="sourceLine" id="cb63-2" data-line-number="2"><span class="kw">head</span>(hg19)</a></code></pre></div>
+<pre><code>##         length  cenStart    cenEnd
+## chr1 249250621 121535434 124535434
+## chr2 243199373  92326171  95326171
+## chr3 198022430  90504854  93504854
+## chr4 191154276  49660117  52660117
+## chr5 180915260  46405641  49405641
+## chr6 171115067  58830166  61830166</code></pre>
+<div class="sourceCode" id="cb65"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb65-1" data-line-number="1"><span class="kw">hapiCVMap</span>(<span class="dt">chr =</span> hg19, <span class="dt">cv =</span> crossover, <span class="dt">step =</span> <span class="dv">5</span>)</a></code></pre></div>
+<p><img src="BioinfoHub_files/figure-html/unnamed-chunk-29-1.png" width="1440" /></p>
 
+</div>
 </div>
 </div>
             </section>
