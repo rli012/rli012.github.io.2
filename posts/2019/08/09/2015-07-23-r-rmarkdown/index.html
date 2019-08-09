@@ -6,7 +6,7 @@
   <meta name="robots" content="all,follow">
   <meta name="googlebot" content="index,follow,snippet,archive">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Migrate from Jekyll</title>
+  <title>First post</title>
   <meta name="author" content="" />
 
   
@@ -58,14 +58,14 @@
   
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:site" content="@">
-  <meta name="twitter:title" content="Migrate from Jekyll">
-  <meta name="twitter:image" content="/img/banners/banner-5.jpg">
+  <meta name="twitter:title" content="First post">
+  <meta name="twitter:image" content="/">
   <meta name="twitter:description" content="Bioinformatics">
 
   
-  <meta property="og:title" content="Migrate from Jekyll" />
+  <meta property="og:title" content="First post" />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="/posts/2015/10/10/migrate-from-jekyll//" />
+  <meta property="og:url" content="/posts/2019/08/09/2015-07-23-r-rmarkdown//" />
   <meta property="og:image" content="img/ruidong_logo.png" />
 
 </head>
@@ -84,9 +84,9 @@
         <div class="container">
             <div class="navbar-header">
                 <a class="navbar-brand home" href="/">
-                    <img src="/img/ruidong_logo.png" alt="Migrate from Jekyll logo" class="hidden-xs hidden-sm">
-                    <img src="/img/ruidong_small_logo.PNG" alt="Migrate from Jekyll logo" class="visible-xs visible-sm">
-                    <span class="sr-only">Migrate from Jekyll - go to homepage</span>
+                    <img src="/img/ruidong_logo.png" alt="First post logo" class="hidden-xs hidden-sm">
+                    <img src="/img/ruidong_small_logo.PNG" alt="First post logo" class="visible-xs visible-sm">
+                    <span class="sr-only">First post - go to homepage</span>
                 </a>
                 <div class="navbar-buttons">
                     <button type="button" class="navbar-toggle btn-template-main" data-toggle="collapse" data-target="#navigation">
@@ -185,7 +185,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <h1>Migrate from Jekyll</h1>
+                <h1>First post</h1>
             </div>
         </div>
     </div>
@@ -201,177 +201,51 @@
 
                     <div class="col-md-9" id="blog-post">
 
-                        <p class="text-muted text-uppercase mb-small text-right">August 9, 10109</p>
+                        <p class="text-muted text-uppercase mb-small text-right">By <a href="#">Ruidong Li</a> | August 9, 9089</p>
 
                         <div id="post-content">
                           
 
-<h2 id="move-static-content-to-static">Move static content to <code>static</code></h2>
 
-<p>Jekyll has a rule that any directory not starting with <code>_</code> will be copied as-is to the <code>_site</code> output. Hugo keeps all static content under <code>static</code>. You should therefore move it all there.
-With Jekyll, something that looked like</p>
-
-<pre><code>▾ &lt;root&gt;/
-    ▾ images/
-        logo.png
-</code></pre>
-
-<p>should become</p>
-
-<pre><code>▾ &lt;root&gt;/
-    ▾ static/
-        ▾ images/
-            logo.png
-</code></pre>
-
-<p>Additionally, you&rsquo;ll want any files that should reside at the root (such as <code>CNAME</code>) to be moved to <code>static</code>.</p>
-
-<h2 id="create-your-hugo-configuration-file">Create your Hugo configuration file</h2>
-
-<p>Hugo can read your configuration as JSON, YAML or TOML. Hugo supports parameters custom configuration too. Refer to the <a href="/overview/configuration/">Hugo configuration documentation</a> for details.</p>
-
-<h2 id="set-your-configuration-publish-folder-to-site">Set your configuration publish folder to <code>_site</code></h2>
-
-<p>The default is for Jekyll to publish to <code>_site</code> and for Hugo to publish to <code>public</code>. If, like me, you have <a href="http://blog.blindgaenger.net/generate_github_pages_in_a_submodule.html"><code>_site</code> mapped to a git submodule on the <code>gh-pages</code> branch</a>, you&rsquo;ll want to do one of two alternatives:</p>
-
-<ol>
-<li><p>Change your submodule to point to map <code>gh-pages</code> to public instead of <code>_site</code> (recommended).</p>
-
-<pre><code>git submodule deinit _site
-git rm _site
-git submodule add -b gh-pages git@github.com:your-username/your-repo.git public
-</code></pre></li>
-
-<li><p>Or, change the Hugo configuration to use <code>_site</code> instead of <code>public</code>.</p>
-
-<pre><code>{
-    ..
-    &quot;publishdir&quot;: &quot;_site&quot;,
-    ..
-}
-</code></pre></li>
-</ol>
-
-<h2 id="convert-jekyll-templates-to-hugo-templates">Convert Jekyll templates to Hugo templates</h2>
-
-<p>That&rsquo;s the bulk of the work right here. The documentation is your friend. You should refer to <a href="http://jekyllrb.com/docs/templates/">Jekyll&rsquo;s template documentation</a> if you need to refresh your memory on how you built your blog and <a href="/layout/templates/">Hugo&rsquo;s template</a> to learn Hugo&rsquo;s way.</p>
-
-<p>As a single reference data point, converting my templates for <a href="http://heyitsalex.net/">heyitsalex.net</a> took me no more than a few hours.</p>
-
-<h2 id="convert-jekyll-plugins-to-hugo-shortcodes">Convert Jekyll plugins to Hugo shortcodes</h2>
-
-<p>Jekyll has <a href="http://jekyllrb.com/docs/plugins/">plugins</a>; Hugo has <a href="/doc/shortcodes/">shortcodes</a>. It&rsquo;s fairly trivial to do a port.</p>
-
-<h3 id="implementation">Implementation</h3>
-
-<p>As an example, I was using a custom <a href="https://github.com/alexandre-normand/alexandre-normand/blob/74bb12036a71334fdb7dba84e073382fc06908ec/_plugins/image_tag.rb"><code>image_tag</code></a> plugin to generate figures with caption when running Jekyll. As I read about shortcodes, I found Hugo had a nice built-in shortcode that does exactly the same thing.</p>
-
-<p>Jekyll&rsquo;s plugin:</p>
-
-<pre><code>module Jekyll
-  class ImageTag &lt; Liquid::Tag
-    @url = nil
-    @caption = nil
-    @class = nil
-    @link = nil
-    // Patterns
-    IMAGE_URL_WITH_CLASS_AND_CAPTION =
-    IMAGE_URL_WITH_CLASS_AND_CAPTION_AND_LINK = /(\w+)(\s+)((https?:\/\/|\/)(\S+))(\s+)&quot;(.*?)&quot;(\s+)-&gt;((https?:\/\/|\/)(\S+))(\s*)/i
-    IMAGE_URL_WITH_CAPTION = /((https?:\/\/|\/)(\S+))(\s+)&quot;(.*?)&quot;/i
-    IMAGE_URL_WITH_CLASS = /(\w+)(\s+)((https?:\/\/|\/)(\S+))/i
-    IMAGE_URL = /((https?:\/\/|\/)(\S+))/i
-    def initialize(tag_name, markup, tokens)
-      super
-      if markup =~ IMAGE_URL_WITH_CLASS_AND_CAPTION_AND_LINK
-        @class   = $1
-        @url     = $3
-        @caption = $7
-        @link = $9
-      elsif markup =~ IMAGE_URL_WITH_CLASS_AND_CAPTION
-        @class   = $1
-        @url     = $3
-        @caption = $7
-      elsif markup =~ IMAGE_URL_WITH_CAPTION
-        @url     = $1
-        @caption = $5
-      elsif markup =~ IMAGE_URL_WITH_CLASS
-        @class = $1
-        @url   = $3
-      elsif markup =~ IMAGE_URL
-        @url = $1
-      end
-    end
-    def render(context)
-      if @class
-        source = &quot;&lt;figure class='#{@class}'&gt;&quot;
-      else
-        source = &quot;&lt;figure&gt;&quot;
-      end
-      if @link
-        source += &quot;&lt;a href=\&quot;#{@link}\&quot;&gt;&quot;
-      end
-      source += &quot;&lt;img src=\&quot;#{@url}\&quot;&gt;&quot;
-      if @link
-        source += &quot;&lt;/a&gt;&quot;
-      end
-      source += &quot;&lt;figcaption&gt;#{@caption}&lt;/figcaption&gt;&quot; if @caption
-      source += &quot;&lt;/figure&gt;&quot;
-      source
-    end
-  end
-end
-Liquid::Template.register_tag('image', Jekyll::ImageTag)
-</code></pre>
-
-<p>is written as this Hugo shortcode:</p>
-
-<pre><code>&lt;!-- image --&gt;
-&lt;figure {{ with .Get &quot;class&quot; }}class=&quot;{{.}}&quot;{{ end }}&gt;
-    {{ with .Get &quot;link&quot;}}&lt;a href=&quot;{{.}}&quot;&gt;{{ end }}
-        &lt;img src=&quot;{{ .Get &quot;src&quot; }}&quot; {{ if or (.Get &quot;alt&quot;) (.Get &quot;caption&quot;) }}alt=&quot;{{ with .Get &quot;alt&quot;}}{{.}}{{else}}{{ .Get &quot;caption&quot; }}{{ end }}&quot;{{ end }} /&gt;
-    {{ if .Get &quot;link&quot;}}&lt;/a&gt;{{ end }}
-    {{ if or (or (.Get &quot;title&quot;) (.Get &quot;caption&quot;)) (.Get &quot;attr&quot;)}}
-    &lt;figcaption&gt;{{ if isset .Params &quot;title&quot; }}
-        {{ .Get &quot;title&quot; }}{{ end }}
-        {{ if or (.Get &quot;caption&quot;) (.Get &quot;attr&quot;)}}&lt;p&gt;
-        {{ .Get &quot;caption&quot; }}
-        {{ with .Get &quot;attrlink&quot;}}&lt;a href=&quot;{{.}}&quot;&gt; {{ end }}
-            {{ .Get &quot;attr&quot; }}
-        {{ if .Get &quot;attrlink&quot;}}&lt;/a&gt; {{ end }}
-        &lt;/p&gt; {{ end }}
-    &lt;/figcaption&gt;
-    {{ end }}
-&lt;/figure&gt;
-&lt;!-- image --&gt;
-</code></pre>
-
-<h3 id="usage">Usage</h3>
-
-<p>I simply changed:</p>
-
-<pre><code>{% image full http://farm5.staticflickr.com/4136/4829260124_57712e570a_o_d.jpg &quot;One of my favorite touristy-type photos. I secretly waited for the good light while we were &quot;having fun&quot; and took this. Only regret: a stupid pole in the top-left corner of the frame I had to clumsily get rid of at post-processing.&quot; -&gt;http://www.flickr.com/photos/alexnormand/4829260124/in/set-72157624547713078/ %}
-</code></pre>
-
-<p>to this (this example uses a slightly extended version named <code>fig</code>, different than the built-in <code>figure</code>):</p>
-
-<pre><code>{{% fig class=&quot;full&quot; src=&quot;http://farm5.staticflickr.com/4136/4829260124_57712e570a_o_d.jpg&quot; title=&quot;One of my favorite touristy-type photos. I secretly waited for the good light while we were having fun and took this. Only regret: a stupid pole in the top-left corner of the frame I had to clumsily get rid of at post-processing.&quot; link=&quot;http://www.flickr.com/photos/alexnormand/4829260124/in/set-72157624547713078/&quot; %}}
-</code></pre>
-
-<p>As a bonus, the shortcode named parameters are, arguably, more readable.</p>
-
-<h2 id="finishing-touches">Finishing touches</h2>
-
-<h3 id="fix-content">Fix content</h3>
-
-<p>Depending on the amount of customization that was done with each post with Jekyll, this step will require more or less effort. There are no hard and fast rules here except that <code>hugo server --watch</code> is your friend. Test your changes and fix errors as needed.</p>
-
-<h3 id="clean-up">Clean up</h3>
-
-<p>You&rsquo;ll want to remove the Jekyll configuration at this point. If you have anything else that isn&rsquo;t used, delete it.</p>
-
-<h2 id="a-practical-example-in-a-diff">A practical example in a diff</h2>
-
-<p><a href="http://heyitsalex.net/">Hey, it&rsquo;s Alex</a> was migrated in less than a <em>father-with-kids day</em> from Jekyll to Hugo. You can see all the changes (and screw-ups) by looking at this <a href="https://github.com/alexandre-normand/alexandre-normand/compare/869d69435bd2665c3fbf5b5c78d4c22759d7613a...b7f6605b1265e83b4b81495423294208cc74d610">diff</a>.</p>
+<div id="r-markdown" class="section level1">
+<h1>R Markdown</h1>
+<p>This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <a href="http://rmarkdown.rstudio.com" class="uri">http://rmarkdown.rstudio.com</a>.</p>
+<p>You can embed an R code chunk like this:</p>
+<pre class="r"><code>summary(cars)
+##      speed           dist       
+##  Min.   : 4.0   Min.   :  2.00  
+##  1st Qu.:12.0   1st Qu.: 26.00  
+##  Median :15.0   Median : 36.00  
+##  Mean   :15.4   Mean   : 42.98  
+##  3rd Qu.:19.0   3rd Qu.: 56.00  
+##  Max.   :25.0   Max.   :120.00
+fit &lt;- lm(dist ~ speed, data = cars)
+fit
+## 
+## Call:
+## lm(formula = dist ~ speed, data = cars)
+## 
+## Coefficients:
+## (Intercept)        speed  
+##     -17.579        3.932</code></pre>
+</div>
+<div id="including-plots" class="section level1">
+<h1>Including Plots</h1>
+<p>You can also embed plots. See Figure <a href="#fig:pie">1</a> for example:</p>
+<pre class="r"><code>par(mar = c(0, 1, 0, 1))
+pie(
+  c(280, 60, 20),
+  c(&#39;Sky&#39;, &#39;Sunny side of pyramid&#39;, &#39;Shady side of pyramid&#39;),
+  col = c(&#39;#0292D8&#39;, &#39;#F7EA39&#39;, &#39;#C4B632&#39;),
+  init.angle = -50, border = NA
+)</code></pre>
+<div class="figure"><span id="fig:pie"></span>
+<img src="/posts/2015-07-23-r-rmarkdown_files/figure-html/pie-1.png" alt="A fancy pie chart." width="672" />
+<p class="caption">
+Figure 1: A fancy pie chart.
+</p>
+</div>
+</div>
 
                         </div>
                         
@@ -447,19 +321,7 @@ Liquid::Template.register_tag('image', Jekyll::ImageTag)
     <div class="panel-body">
         <ul class="nav nav-pills nav-stacked">
             
-            <li><a href="/categories/lorem">lorem (1)</a>
-            </li>
-            
-            <li><a href="/categories/programming">programming (2)</a>
-            </li>
-            
-            <li><a href="/categories/pseudo">pseudo (1)</a>
-            </li>
-            
             <li><a href="/categories/r">r (1)</a>
-            </li>
-            
-            <li><a href="/categories/starting">starting (1)</a>
             </li>
             
         </ul>
@@ -481,31 +343,7 @@ Liquid::Template.register_tag('image', Jekyll::ImageTag)
     <div class="panel-body">
         <ul class="tag-cloud">
             
-            <li><a href="/tags/go"><i class="fa fa-tags"></i> go</a>
-            </li>
-            
-            <li><a href="/tags/golang"><i class="fa fa-tags"></i> golang</a>
-            </li>
-            
-            <li><a href="/tags/hugo"><i class="fa fa-tags"></i> hugo</a>
-            </li>
-            
-            <li><a href="/tags/ipsum"><i class="fa fa-tags"></i> ipsum</a>
-            </li>
-            
-            <li><a href="/tags/plot"><i class="fa fa-tags"></i> plot</a>
-            </li>
-            
-            <li><a href="/tags/programming"><i class="fa fa-tags"></i> programming</a>
-            </li>
-            
-            <li><a href="/tags/r-markdown"><i class="fa fa-tags"></i> r-markdown</a>
-            </li>
-            
-            <li><a href="/tags/regression"><i class="fa fa-tags"></i> regression</a>
-            </li>
-            
-            <li><a href="/tags/theme"><i class="fa fa-tags"></i> theme</a>
+            <li><a href="/tags/ggplot2"><i class="fa fa-tags"></i> ggplot2</a>
             </li>
             
         </ul>
@@ -560,7 +398,7 @@ Liquid::Template.register_tag('image', Jekyll::ImageTag)
     <div class="container">
         <div class="col-md-12">
             
-            <p class="pull-left">Copyright (c) 2019, Ruidong Li; all rights reserved.</p>
+            <p class="pull-left">Copyright (c) 2019, Ruidong Li</p>
             
             <p class="pull-right">
               Template by <a href="http://bootstrapious.com/free-templates">Bootstrapious</a>.

@@ -13,10 +13,10 @@
     
     <item>
       <title>Hugo is for lovers</title>
-      <link>/posts/hugo-is-for-lovers/</link>
+      <link>/posts/2015/08/03/hugo-is-for-lovers/</link>
       <pubDate>Mon, 03 Aug 2015 13:39:46 +0200</pubDate>
       
-      <guid>/posts/hugo-is-for-lovers/</guid>
+      <guid>/posts/2015/08/03/hugo-is-for-lovers/</guid>
       <description>Step 1. Install Hugo Goto hugo releases and download the appropriate version for your os and architecture.
 Save it somewhere specific as we will be using it in the next step.
 More complete instructions are available at installing hugo
