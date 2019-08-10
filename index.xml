@@ -23,31 +23,48 @@ summary(cars)## speed dist ## Min. : 4.0 Min. : 2.00 ## 1st Qu.:12.0 1st Qu.: 2
     </item>
     
     <item>
-      <title></title>
-      <link>/cn/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/cn/</guid>
-      <description>李瑞东</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>/publications/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/publications/</guid>
-      <description>Li, R., Qu, H., Wang, S., Wei, J., Zhang, L., Ma, R., Lu, J., Zhu, J., Zhong, W.D. and Jia, Z., 2018. GDCRNATools: an R/Bioconductor package for integrative analysis of lncRNA, miRNA and mRNA data in GDC. Bioinformatics, 34(14), pp.2515-2517.
- Cui, Y., Li, R., Li, G., Zhang, F., Zhu, T., Zhang, Q., Ali, J., Li, Z. and Xu, S., 2019. Hybrid Breeding of Rice via Genomic Selection. Plant Biotechnology Journal.</description>
-    </item>
-    
-    <item>
       <title>About me</title>
       <link>/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/about/</guid>
       <description>BiographyMy name is Ruidong Li, a Bioinformatics Research Scientist at Gilead Sciences, Inc. in the Bay Area in California, USA. Before joining Gilead, I studied in the Genetics, Genomics, and Bioinformatics (GGB) Program at Univeristy of California, Riverside (UCR) for the Ph.D. degree of Bioinformatics (2013-2018) and in the Institute of Genetics and Developmental Biology (IGDB), Chinese Academy of Sciences (CAS) for my master’s degree of Genetics (2010-2013).</description>
+    </item>
+    
+    <item>
+      <title>External links</title>
+      <link>/external/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/external/</guid>
+      <description>DatabasesGene Expression Omnibus (GEO): https://gdc.cancer.gov/
+NCI Genomic Data Commons: https://gdc.cancer.gov/
+cBioPortal for Cancer Genomics: https://www.cbioportal.org/
+UCSC Xena: https://xena.ucsc.edu/
+Ensembl Genome Browser: https://uswest.ensembl.org/index.html
+UniProt: https://www.uniprot.org/
+Online toolsGEPIA 2: http://gepia2.cancer-pku.cn/#index
+Metascape: http://metascape.org/gp/index.html#/main/step1
+</description>
+    </item>
+    
+    <item>
+      <title>Publications</title>
+      <link>/publications/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/publications/</guid>
+      <description>Li, R., Qu, H., Wang, S., Wei, J., Zhang, L., Ma, R., Lu, J., Zhu, J., Zhong, W.D. and Jia, Z., 2018. GDCRNATools: an R/Bioconductor package for integrative analysis of lncRNA, miRNA and mRNA data in GDC. Bioinformatics, 34(14), pp.2515-2517.
+Cui, Y., Li, R., Li, G., Zhang, F., Zhu, T., Zhang, Q., Ali, J., Li, Z. and Xu, S., 2019. Hybrid Breeding of Rice via Genomic Selection. Plant Biotechnology Journal.</description>
+    </item>
+    
+    <item>
+      <title>中文</title>
+      <link>/cn/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/cn/</guid>
+      <description>李瑞东</description>
     </item>
     
   </channel>

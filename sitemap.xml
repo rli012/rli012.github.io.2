@@ -44,17 +44,19 @@
   </url>
   
   <url>
-    <loc>/cn/</loc>
-    <priority>0</priority>
+    <loc>/about/</loc>
+  </url>
+  
+  <url>
+    <loc>/external/</loc>
   </url>
   
   <url>
     <loc>/publications/</loc>
-    <priority>0</priority>
   </url>
   
   <url>
-    <loc>/about/</loc>
+    <loc>/cn/</loc>
   </url>
   
 </urlset>
