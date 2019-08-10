@@ -50,17 +50,5 @@ summary(cars)## speed dist ## Min. : 4.0 Min. : 2.00 ## 1st Qu.:12.0 1st Qu.: 2
       <description>BiographyMy name is Ruidong Li, a Bioinformatics Research Scientist at Gilead Sciences, Inc. in the Bay Area in California, USA. Before joining Gilead, I studied in the Genetics, Genomics, and Bioinformatics (GGB) Program at Univeristy of California, Riverside (UCR) for the Ph.D. degree of Bioinformatics (2013-2018) and in the Institute of Genetics and Developmental Biology (IGDB), Chinese Academy of Sciences (CAS) for my master’s degree of Genetics (2010-2013).</description>
     </item>
     
-    <item>
-      <title>FAQ</title>
-      <link>/faq/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/faq/</guid>
-      <description> For questions
-1. WHAT IS THIS SITE FOR? My personal homepage.
-2. WHAT ARE YOU INTERESTED IN?  Bioinformatics Data Science Cancer Early Detection   In case you haven&amp;rsquo;t found the answer for your question please feel free to contact me.
- </description>
-    </item>
-    
   </channel>
 </rss>
