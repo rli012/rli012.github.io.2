@@ -1,0 +1,5 @@
+weight: 2
+name: "GDCRNATools"
+image: "img/clients/GDCRNATools.png"
+url: "https://bioconductor.org/packages/devel/bioc/html/GDCRNATools.html"
+description: "Collection of standard bioinformatics pipelines"

@@ -1,0 +1,85 @@
+---
+title: "About me"
+---
+  
+### Biography
+
+My name is Ruidong Li, a Bioinformatics Research Scientist at [Gilead Sciences, Inc.](https://www.gilead.com/) in the Bay Area in California, USA. 
+
+During my Ph.D. study in the [Genetics, Genomics, and Bioinformatics (GGB) Program](https://ggb.ucr.edu/) at [Univeristy of California, Riverside (UCR)](https://www.ucr.edu/), I developed two R/Bioconductor pacakges: [GDCRNATools](https://bioconductor.org/packages/devel/bioc/html/GDCRNATools.html) for integrative analysis of multi-omics data from [The Cancer Genome Atlas (TCGA)](https://gdc.cancer.gov/), and [Hapi](https://cran.r-project.org/web/packages/Hapi/vignettes/Hapi.html) for whole-genome haplotype inference using single reproductive cell sequencing. 
+
+I'm now planning to make a comprehensive collection of standard bioinformatics pipelines ([BioinfoHub](https://rli012.github.io/BioinfoHub-pages/book/)) to facilitate the research for the community.
+
+I love open source and I am very happy to be collaborating with biologists on exciting projects, especially cancer genomics studies. If you have any questions or would like to have more discussions, please feel free to email me at rli012@ucr.edu or add my wechat: li-rui-dong, although the response may not be prompt.
+
+
+### Working experience
+
+**2018.12 - **
+
+Research Scientist, Bioinformatics
+
+Gilead Sciences, Inc.
+
+Foster City, California, USA
+
+
+### Education
+
+**2013.9 - 2018.6**
+
+Ph.D. of Bioinformatics
+
+Genetics, Genomics, & Bioinformatics Program (GGB)
+
+University of California, Riverside (UCR)
+
+Riverside, California, USA
+
+
+**2010.9 - 2013.6**
+
+M.Sc. of Genetics
+
+Institute of Genetics & Developmental Biology (IGDC)
+
+University of Chinese Academy of Sciences (UCAS)
+
+Beijing, China
+
+
+**2006.9 - 2010.6**
+
+B.Sc. of Agronomy
+
+College of Plant Science & Technology
+
+Huazhong Agricultural University (HZAU)
+
+Wuhan, Hubei, China
+
+
+### Research interests
+
+Bioinformatics
+
+Data Science
+
+Cancer Genomics
+
+Cancer Early Detection
+
+---
+### Technical skills
+
+#R/Bioconductor/shiny, Python, Linux, Slurm, SGE
+
+#WGS/WES, RNAseq, ChIPseq, Single-cell sequencing, Microarray
+
+#BWA/bowtie2, STAR, GATK/samtools, PLINK, EMMAX/fastLMM, HTSeq, Seurat
+
+#TCGA, GEO, Blueprint, CCLE, GTEx, Encode
+
+...
+---
+

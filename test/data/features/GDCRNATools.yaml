@@ -1,0 +1,4 @@
+weight: 2
+name: "BioinfoHub"
+icon: "fa fa-desktop"
+description: "Collection of standard bioinformatics pipelines."

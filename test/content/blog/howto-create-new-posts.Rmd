@@ -1,0 +1,25 @@
+---
+title: "HOWTO create new posts using the hugo-universal-theme"
+author: "Ruidong Li"
+date: "`r Sys.Date()`"
+categories: ["Hugo",'HOWTO']
+tags: ["HOWTO",'hugo-universal-theme']
+banner: "img/banners/howto-create-new-posts.jpg"
+---
+
+
+1. WARNING: NEVER CHANGE THE [[main.manu]] blog TO OTHER THINGS IN 'config.toml'
+
+2. Make a banner image (1000*750 px), put it into static/img/banners/
+
+3. Run blogdown::serve_site() in RStudio
+
+4. Change 'Blogs' to 'Posts' in public/blog/xxx/index.html. xxx is the name of the post
+
+5. Upload 'index.html', 'index.xml', 'sitemap.xml', 'blog/xxx/index'
+
+
+TODO: Change 'Blogs' to 'Posts' automatically
+
+
+Thanks to [ServiceMesher](https://github.com/servicemesher/website) for the detailed instruction of the hugo-universal-theme

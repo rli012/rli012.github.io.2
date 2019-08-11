@@ -1,0 +1,5 @@
+weight: 3
+name: "Hapi"
+image: "img/clients/Hapi.png"
+url: "https://cran.r-project.org/web/packages/Hapi/vignettes/Hapi.html"
+description: "Collection of standard bioinformatics pipelines"
