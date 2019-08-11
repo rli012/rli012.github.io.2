@@ -793,7 +793,7 @@ fieldset[disabled] .btn-template-primary.active {
   padding: 30px;
   margin-bottom: 0;
   position: relative;
-  background: url('../img/background.jpg') center center repeat;
+  background: url('background.jpg') center center repeat;
   background-size: cover;
   -webkit-transition: all 0.2s ease-out;
   -moz-transition: all 0.2s ease-out;
