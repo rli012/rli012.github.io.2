@@ -4,7 +4,7 @@ title: "External links"
   
 ### Databases
 
-1. **Gene Expression Omnibus (GEO):** https://gdc.cancer.gov/
+1. **Gene Expression Omnibus (GEO):** https://www.ncbi.nlm.nih.gov/geo/
 
 2. **NCI Genomic Data Commons:** https://gdc.cancer.gov/
 
