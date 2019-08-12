@@ -1,5 +1,0 @@
-weight: 6
-name: "fast.ai"
-image: "img/clients/fastai.png"
-url: "https://www.fast.ai/"
-description: "Collection of standard bioinformatics pipelines"
