@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Researches on Ruidong Li</title>
+    <link>/research/</link>
+    <description>Recent content in Researches on Ruidong Li</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 26 Apr 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/research/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>LIVER DISEASE</title>
+      <link>/research/liver/</link>
+      <pubDate>Sun, 26 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/research/liver/</guid>
+      <description>HBVHepatitis B FoundationNASHHCC</description>
+    </item>
+    
+    <item>
+      <title>HOW TO CREATE NEW POSTS</title>
+      <link>/research/howto-create-new-posts/</link>
+      <pubDate>Sun, 11 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/research/howto-create-new-posts/</guid>
+      <description>WARNING: NEVER CHANGE THE [[main.manu]] blog TO OTHER THINGS IN ‘config.toml’
+Make a banner image (1000*750 px), put it into static/img/banners/
+Run blogdown::serve_site() in RStudio
+Change ‘Blogs’ to ‘Posts’ in public/blog/index.html
+TODO:
+Change ‘Blogs’ to ‘Posts’ automatically
+Try Netlify
+Thanks to ServiceMesher for the detailed instruction of the hugo-universal-theme</description>
+    </item>
+    
+  </channel>
+</rss>
