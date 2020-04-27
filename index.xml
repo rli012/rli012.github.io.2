@@ -6,17 +6,26 @@
     <description>Recent content on Ruidong Li</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 11 Aug 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 26 Apr 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>LIVER DISEASE</title>
+      <link>/research/liver/</link>
+      <pubDate>Sun, 26 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/research/liver/</guid>
+      <description>HBVHepatitis B FoundationNASHHCC</description>
+    </item>
+    
+    <item>
       <title>HOW TO CREATE NEW POSTS</title>
-      <link>/blog/howto-create-new-posts/</link>
+      <link>/research/howto-create-new-posts/</link>
       <pubDate>Sun, 11 Aug 2019 00:00:00 +0000</pubDate>
       
-      <guid>/blog/howto-create-new-posts/</guid>
+      <guid>/research/howto-create-new-posts/</guid>
       <description>WARNING: NEVER CHANGE THE [[main.manu]] blog TO OTHER THINGS IN ‘config.toml’
 Make a banner image (1000*750 px), put it into static/img/banners/
 Run blogdown::serve_site() in RStudio
@@ -35,7 +44,7 @@ Thanks to ServiceMesher for the detailed instruction of the hugo-universal-theme
       <guid>/about/</guid>
       <description>BiographyMy name is Ruidong Li, a Bioinformatics Research Scientist at Gilead Sciences, Inc. in the Bay Area in California, USA.
 During my Ph.D. study in the Genetics, Genomics, and Bioinformatics (GGB) Program at Univeristy of California, Riverside (UCR), I developed two R/Bioconductor pacakges: GDCRNATools for integrative analysis of multi-omics data from The Cancer Genome Atlas (TCGA), and Hapi for whole-genome haplotype inference using single reproductive cell sequencing.
-I’m now planning to make a comprehensive collection of standard bioinformatics pipelines (BioinfoHub) to facilitate the research for the community.</description>
+I’m currently planning to make a comprehensive collection of standard bioinformatics pipelines (BioinfoHub) to facilitate the research for the community.</description>
     </item>
     
     <item>
@@ -61,8 +70,8 @@ I’m now planning to make a comprehensive collection of standard bioinformatics
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/publications/</guid>
-      <description>Li, R., Qu, H., Wang, S., Wei, J., Zhang, L., Ma, R., Lu, J., Zhu, J., Zhong, W.D. and Jia, Z., 2018. GDCRNATools: an R/Bioconductor package for integrative analysis of lncRNA, miRNA and mRNA data in GDC. Bioinformatics, 34(14), pp.2515-2517.
-Cui, Y., Li, R., Li, G., Zhang, F., Zhu, T., Zhang, Q., Ali, J., Li, Z. and Xu, S., 2019. Hybrid Breeding of Rice via Genomic Selection. Plant Biotechnology Journal.</description>
+      <description>2020Li, R.#, Qu, H.#, Chen, J., Wang, S., Chater, J.M., Zhang, L., Wei, J., Zhang, Y., Xu, C., Zhong, W.D. and Zhu, J., 2020. Inference of Chromosome-length Haplotypes Using Genomic Data of Three to Five Single Gametes. Molecular Biology and Evolution. (Under revision)
+Shi, X.#, Li, R.#, Dong, X., Chen, A.M., Liu, X., Lu, D., Feng, S., Wang, H., and Cai, K., 2020. An Immune-associated gene classifier for lung adenocarcinoma prognosis.</description>
     </item>
     
     <item>
