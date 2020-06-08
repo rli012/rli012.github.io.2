@@ -8,7 +8,7 @@ My name is Ruidong Li, a Bioinformatics Research Scientist at [Gilead Sciences, 
 
 During my Ph.D. study in the [Genetics, Genomics, and Bioinformatics (GGB) Program](https://ggb.ucr.edu/) at [Univeristy of California, Riverside (UCR)](https://www.ucr.edu/), I developed two R/Bioconductor pacakges: [GDCRNATools](https://bioconductor.org/packages/devel/bioc/html/GDCRNATools.html) for integrative analysis of multi-omics data from [The Cancer Genome Atlas (TCGA)](https://gdc.cancer.gov/), and [Hapi](https://cran.r-project.org/web/packages/Hapi/vignettes/Hapi.html) for whole-genome haplotype inference using single reproductive cell sequencing. 
 
-I'm now planning to make a comprehensive collection of standard bioinformatics pipelines ([BioinfoHub](https://rli012.github.io/BioinfoHub-pages/book/)) to facilitate the research for the community.
+I'm currently planning to make a comprehensive collection of standard bioinformatics pipelines ([BioinfoHub](https://rli012.github.io/BioinfoHub-pages/book/)) to facilitate the research for the community.
 
 I love open source and I am very happy to be collaborating with biologists on exciting projects, especially cancer genomics studies. If you have any questions or would like to have more discussions, please feel free to email me at rli012@ucr.edu or add my wechat: li-rui-dong, although the response may not be prompt.
 
@@ -41,7 +41,7 @@ Riverside, California, USA
 
 M.Sc. of Genetics
 
-Institute of Genetics & Developmental Biology (IGDC)
+Institute of Genetics & Developmental Biology (IGDB)
 
 University of Chinese Academy of Sciences (UCAS)
 
@@ -67,7 +67,7 @@ Data Science
 
 Cancer Genomics
 
-Cancer Early Detection
+Early Cancer Detection
 
 ---
 ### Technical skills
