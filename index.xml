@@ -49,10 +49,10 @@ I’m currently planning to make a comprehensive collection of standard bioinfor
     
     <item>
       <title>Projects</title>
-      <link>/external/</link>
+      <link>/projects/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/external/</guid>
+      <guid>/projects/</guid>
       <description>Bioinformatics toolsPublic data collection, curation, and analysisDevelopment of database/webserverDevelopment of bioinformatics tools/pipelines for new technologies (e.g., single-cell RNAseq)Evaluation of bioinformatics tools/pipelines for new technologies (e.g., single-cell RNAseq)Early cancer detectionDevelopment of statistical/machine learning algorithms and panels for early cancer detection and tissue-of-origin identificationCancer prognosis and treatmentDevelopment of statistical/machine learning algorithms and panels for cancer prognosis, patient stratification, drug response, etc.</description>
     </item>
     
