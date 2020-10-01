@@ -43,8 +43,7 @@ Thanks to ServiceMesher for the detailed instruction of the hugo-universal-theme
       
       <guid>/about/</guid>
       <description>BiographyMy name is Ruidong Li, a Bioinformatics Research Scientist at Gilead Sciences, Inc. in the Bay Area in California, USA.
-During my Ph.D. study in the Genetics, Genomics, and Bioinformatics (GGB) Program at Univeristy of California, Riverside (UCR), I developed two R/Bioconductor pacakges: GDCRNATools for integrative analysis of multi-omics data from The Cancer Genome Atlas (TCGA), and Hapi for whole-genome haplotype inference using single reproductive cell sequencing.
-I’m currently planning to make a comprehensive collection of standard bioinformatics pipelines (BioinfoHub) to facilitate the research for the community.</description>
+During my Ph.D. study in the Genetics, Genomics, and Bioinformatics (GGB) Program at Univeristy of California, Riverside (UCR), I developed two R/Bioconductor pacakges: GDCRNATools for integrative analysis of multi-omics data from The Cancer Genome Atlas (TCGA) (Li et al., Bioinformatics, 2018), and Hapi for whole-genome haplotype inference using single reproductive cell sequencing (Li et al.</description>
     </item>
     
     <item>
@@ -62,7 +61,7 @@ I’m currently planning to make a comprehensive collection of standard bioinfor
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/publications/</guid>
-      <description>20201. Li, R.#, Qu, H.#, Chen, J., Wang, S., Chater, J.M., Zhang, L., Wei, J., Zhang, Y., Xu, C., Zhong, W.D., Zhu, J., Lu, J., Feng, Y., Chen, W., Ma, R., Ferrante, S.P., Roose, M.L., and Jia, Z., 2020. Inference of Chromosome-length Haplotypes Using Genomic Data of Three or a Few More Single Gametes. Molecular Biology and Evolution. (IF: 14.797)
+      <description>20201. Li, R.#, Qu, H.#, Chen, J., Wang, S., Chater, J.M., Zhang, L., Wei, J., Zhang, Y., Xu, C., Zhong, W.D., Zhu, J., Lu, J., Feng, Y., Chen, W., Ma, R., Ferrante, S.P., Roose, M.L., and Jia, Z., 2020. Inference of Chromosome-length Haplotypes Using Genomic Data of Three or a Few More Single Gametes. Molecular Biology and Evolution. (IF: 11.062)
 2. Li, R.#, Wang, S.#, Cui, Y.#, Qu, H.</description>
     </item>
     
